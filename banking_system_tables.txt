@@ -1,0 +1,18 @@
+create database atm;
+
+use atm;
+
+create table login(formno varchar(20), cardno varchar(30), pin varchar(20));
+
+create table signup_user_details(formno varchar(20), name varchar(50), fname varchar(30), dob varchar(40), 
+gender varchar(20), email varchar(50), marital varchar(20), address varchar(40), city varchar(20), pincode varchar(20), state varchar(30));
+
+create table signup_user_personal_details(formno varchar(20), religion varchar(20), category varchar(30), income varchar(30),
+education_qualification varchar(20), occupation varchar(20), pan_number varchar(20), aadhar_number varchar(20), senior_citizen varchar(40), 
+existing_account varchar(20));
+
+create table signup_user_account_details(formno varchar(20), account_type varchar(20), card_number varchar(30), pin varchar(20), 
+services_required varchar(100));
+
+create table bank_acc(pin varchar(10), date varchar(40), mode varchar(30), amount varchar(20));
+
