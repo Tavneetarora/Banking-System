@@ -14,16 +14,6 @@ public class signup3 extends JFrame implements ActionListener {
 	JCheckBox c1, c2, c3, c4, c5, c6, c7;
 	String formno;
 
-	signup3(String formno) {
-		this.formno = formno;
-		setTitle("NEW ACCOUNT APPLICATION FORM - PAGE 3");
-		ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("bankingsystem/icons/logo.jpg"));
-		Image i2 = i1.getImage().getScaledInstance(100, 100, Image.SCALE_DEFAULT);
-		ImageIcon i3 = new ImageIcon(i2);
-		JLabel l14 = new JLabel(i3);
-		l14.setBounds(150, 0, 100, 100);
-		add(l14);
-
 		l1 = new JLabel("Page 3: Account Details");
 		l1.setFont(new Font("Raleway", Font.BOLD, 22));
 
@@ -200,8 +190,8 @@ public class signup3 extends JFrame implements ActionListener {
 
 		getContentPane().setBackground(Color.WHITE);
 
-		setSize(850, 710);
-		setLocation(500, 120);
+		setSize(850, 800);
+		setLocation(500, 20);
 		setVisible(true);
 
 		b1.addActionListener(this);
@@ -249,7 +239,7 @@ public class signup3 extends JFrame implements ActionListener {
 
 			if (ae.getSource() == b1) {
 
-				if (atype.equals("")) {
+				if (atype==null || formno==null || facility.equals("")) {
 					JOptionPane.showMessageDialog(null, "Fill all the required fields");
 
 				} else {

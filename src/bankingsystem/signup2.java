@@ -18,7 +18,7 @@ public class signup2 extends JFrame implements ActionListener {
 	signup2(String formno) {
 
 		this.formno = formno;
-		setTitle("NEW ACCOUNT APPLICATION FORM - PAGE 2");
+		setTitle("NEW ACCOUNT FORM");
 
 		l1 = new JLabel("Page 2: Additonal Details");
 		l1.setFont(new Font("Raleway", Font.BOLD, 22));
@@ -220,7 +220,8 @@ public class signup2 extends JFrame implements ActionListener {
 			eaccount = "No";
 		}
 		try {
-			if (t2.getText().equals("")) {
+			if (t1.getText().equals("") || t2.getText().equals("") || formno.equals("")
+					|| scitizen.equals("") || eaccount.equals("")) {
 				JOptionPane.showMessageDialog(null, "Fill all the required fields");
 			} else {
 				Connec c1 = new Connec();
