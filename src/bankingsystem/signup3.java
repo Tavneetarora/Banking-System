@@ -14,6 +14,8 @@ public class signup3 extends JFrame implements ActionListener {
 	JCheckBox c1, c2, c3, c4, c5, c6, c7;
 	String formno;
 
+		setTitle("NEW ACCOUNT FORM");
+
 		l1 = new JLabel("Page 3: Account Details");
 		l1.setFont(new Font("Raleway", Font.BOLD, 22));
 
